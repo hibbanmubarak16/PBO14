@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e33f0429-d3dc-4522-a72c-2e19a8d97f1f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM koleksi_buku ORDER BY id_buku]]>
+	</queryString>
+	<field name="id_buku" class="java.lang.String"/>
+	<field name="judul" class="java.lang.String"/>
+	<field name="genre" class="java.lang.String"/>
+	<field name="pengarang" class="java.lang.String"/>
+	<field name="tahun_terbit" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="229" y="12" width="183" height="31" uuid="13f87159-16fd-467a-afb6-1334ac91740e"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[KOLEKSI BUKU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="172" y="43" width="345" height="20" uuid="9a7d4ebc-3d31-40d5-bd15-91699100d277"/>
+				<text><![CDATA[UNIVERSITAS ISLAM NEGERI SUNAN AMPEL SURABAYA]]></text>
+			</staticText>
+			<image>
+				<reportElement x="29" y="25" width="273" height="38" uuid="00acffc8-0189-4f34-a49f-3d8e41faf4e4"/>
+				<imageExpression><![CDATA["C:\\Users\\hibban mubarak\\Documents\\uin.jpeg"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="0" y="66" width="555" height="1" uuid="34cda681-78f8-453c-bb0c-4fd722536af6"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="72" splitType="Stretch">
+			<staticText>
+				<reportElement x="43" y="10" width="196" height="20" uuid="ca6585ca-b7a6-4196-ae0e-fdc21288a664"/>
+				<text><![CDATA[NAMA : HIBBAN AULIA MUBARAK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="30" width="165" height="20" uuid="b3bce636-9ea7-4377-a663-cd17d1094ed6"/>
+				<text><![CDATA[PRODI : SISTEM INFORMASI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="50" width="100" height="20" uuid="67e4d738-bc57-4e3d-8109-fac48047b4fc"/>
+				<text><![CDATA[NIM : 09030624073]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<rectangle>
+				<reportElement x="29" y="41" width="100" height="20" uuid="12b38924-c048-426b-a0fb-85ee7b8e3fc2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="129" y="41" width="100" height="20" uuid="1361090f-0ce5-4563-8faf-b7b1ec086e14"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="229" y="41" width="100" height="20" uuid="09c2217d-d784-4e3f-a9fb-4aae1ae956c4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="329" y="41" width="100" height="20" uuid="d5bce8bc-eb8d-4dbe-b0b4-a09e1c133fe3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="429" y="41" width="100" height="20" uuid="40750dce-9217-453c-b439-afcd68f3722c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="41" width="500" height="20" uuid="34bcf383-d364-4d45-9492-fc54537e0bfe"/>
+				<text><![CDATA[ id_buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="129" y="41" width="100" height="20" uuid="068bb627-2220-4586-9a9d-60a6fed9c4ad"/>
+				<text><![CDATA[ judul]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="41" width="100" height="20" uuid="66f9d91b-6af0-4e60-a633-97a7724347bb"/>
+				<text><![CDATA[ genre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="329" y="41" width="100" height="20" uuid="eccb0a1b-8767-425a-a2a2-1664b329a4cc"/>
+				<text><![CDATA[ pengarang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="41" width="100" height="20" uuid="9ffb3330-561c-429e-8d33-54ae41a8c5c9"/>
+				<text><![CDATA[ tahun_terbit]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="29" y="1" width="100" height="20" uuid="dd052ad7-875d-4d48-a059-0930412026da"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="129" y="1" width="100" height="20" uuid="f9e397d5-97d3-4d00-9ee6-09d0e0d43a45"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="229" y="1" width="100" height="20" uuid="82164531-6029-4a70-89ea-efe9930fccf5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="329" y="1" width="100" height="20" uuid="bdcc9195-3f82-4008-bff3-a0027b8d3d91"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="429" y="1" width="100" height="20" uuid="6136de4d-13dd-4cd1-92f8-7717531f81a9"/>
+			</rectangle>
+			<textField>
+				<reportElement x="30" y="0" width="100" height="20" uuid="e590d629-72f8-4780-a402-a7b0e17548d9"/>
+				<textFieldExpression><![CDATA[$F{id_buku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="129" y="0" width="100" height="20" uuid="61d8d61c-7586-4d01-a924-ad742cdc5e1f"/>
+				<textFieldExpression><![CDATA[$F{judul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="229" y="0" width="100" height="20" uuid="f888dd72-dfa5-439f-92ff-bf7aa696d273"/>
+				<textFieldExpression><![CDATA[$F{genre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="329" y="0" width="100" height="20" uuid="2b3322fc-8ea1-48d9-bbeb-177c42ec85e1"/>
+				<textFieldExpression><![CDATA[$F{pengarang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="429" y="0" width="100" height="20" uuid="cd75e22f-e705-42e8-918d-f96923d43e4b"/>
+				<textFieldExpression><![CDATA[$F{tahun_terbit}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
